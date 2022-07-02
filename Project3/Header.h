@@ -14,7 +14,7 @@
 * @param st - степень числа x
 * @return sum - сумма чисел числа
 */
-long long sum_digits(int x, int st);
+int sum_digits(int x, int st);
 
 /**
 * Очищение строки от знаков после символа '\0'

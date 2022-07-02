@@ -5,7 +5,7 @@ int clean_stdin() {
 	return 1;
 }
 
-long long sum_digits(int x, int st) {
+int sum_digits(int x, int st) {
 	char c[500] = "\0";
 	char* ptr1 = &c[0];
 	char mass[500] = "\0";
@@ -18,14 +18,11 @@ long long sum_digits(int x, int st) {
 	int l = strlen(c) - 7;
 	strncat(ptr2, ptr1, sizeof(char) * l);
 	mass[l + 1] = '\0';
-	printf("Число: %s", mass);
-
 	for (int i = 0; i < l; i++) {
 		n = mass[i];
 		char* t = &n;
 		n1 = atoi(t);
 		sum += n1;
 	}
-
 	return sum;
 }
