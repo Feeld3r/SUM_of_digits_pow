@@ -8,7 +8,6 @@ int main() {
 	int x, st;
 	char c = '\n';
 	do {
-		printf("123");
 		printf("¬ведите число: ");
 	} while ((scanf("%d%c", &x, &c) != 2 || c != '\n') && clean_stdin());
 	do {
